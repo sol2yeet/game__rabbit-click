@@ -13,9 +13,9 @@ button {
   display: flex;
   flex-direction: column;
   /* 높이와 넓이를 지정할 때 맨위에 변수로 지정해주면 좋음 */
-  width: 950px;
-  height: 700px;
-  background: url("https://images.unsplash.com/photo-1561043394-9f7d16d9ae37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80")
+  width: 1000px;
+  height: 800px;
+  background: url("https://images.unsplash.com/photo-1556838803-cc94986cb631?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2167&q=80")
     /* background-image 일때 안되는 이유, 뒤에 한번에 쓰기 가능 */ center/cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -47,9 +47,11 @@ button {
   font-size: 32px;
   margin-top: 8px;
   border-radius: 20px;
+  visibility: hidden;
 }
 
 .game__score {
+  visibility: hidden;
   width: 50px;
   height: 50px;
   font-size: 46px;
@@ -64,10 +66,10 @@ button {
 }
 
 .game__field {
+  position: relative;
   width: 100%;
   height: 100%;
   margin-top: 150px;
-  opacity: 0.4;
 }
 
 .pop-up {
